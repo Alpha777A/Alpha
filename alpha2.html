@@ -27,42 +27,44 @@
 
         /* จัดเนื้อหาให้อยู่ตรงกลาง */
         .container {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             color: #ffffff;
+           
+            padding: 20px;
+            border-radius: 10px;
         }
 
         /* เพิ่มเงาตัวอักษรให้ชัดขึ้น */
-        h1, p {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
+
 
         /* สไตล์ปุ่ม */
         .btn {
-            background-color:hsl(196, 51%, 27%);
+            background-color: hsl(196, 51%, 27%);
             color: white;
             padding: 15px 25px;
             font-size: 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 60px; /* ปรับให้ปุ่มอยู่ด้านล่างข้อความ */
+            margin-top: 20px;
             text-decoration: none;
+            display: inline-block;
         }
 
         .btn:hover {
-            background-color: hsl(196, 51%, 27%);
+            background-color: hsl(196, 51%, 37%);
         }
     </style>
 </head>
 <body>
 
     <!-- วิดีโอพื้นหลัง -->
-    <video autoplay muted loop playsinline>
-         <source src="856148-hd_1920_1080_25fps.mp4" type="video/mp4">
+    <video class="video-bg" autoplay muted loop playsinline>
+        <source src="856148-hd_1920_1080_25fps.mp4" type="video/mp4">
         วิดีโอไม่รองรับในเบราว์เซอร์ของคุณ
     </video>
 
